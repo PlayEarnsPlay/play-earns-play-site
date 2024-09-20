@@ -24,7 +24,7 @@
     }
     /* Navigation Bar Styles */
     nav {
-      background-color: #68AD9C; /* Accent color */
+      background-color: #68AD9C;
       position: fixed;
       width: 100%;
       top: 0;
@@ -49,7 +49,8 @@
       font-size: 1em;
       transition: color 0.3s;
     }
-    nav ul li a:hover {
+    nav ul li a:hover,
+    nav ul li a.active {
       color: #000000;
     }
     /* Hero Section Styles */
@@ -134,7 +135,7 @@
   <!-- Navigation Bar -->
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <!-- Add more navigation items as needed -->
     </ul>
@@ -170,5 +171,28 @@
       Play Earns Play is an innovative app that encourages kids to engage in outdoor activities by rewarding them with screen time. Our mission is to promote a healthy balance between physical activity and digital entertainment. By making outdoor play fun and rewarding, we help children develop healthy habits that last a lifetime.
     </p>
   </section>
+
+  <!-- JavaScript for Active Navigation Link -->
+  <script>
+    // Function to add 'active' class to nav links based on scroll position
+    window.addEventListener('scroll', function() {
+      var sections = document.querySelectorAll('section');
+      var navLinks = document.querySelectorAll('nav ul li a');
+
+      sections.forEach(function(section) {
+        var sectionTop = section.offsetTop - 70; // Adjust for fixed nav height
+        var sectionHeight = section.offsetHeight;
+        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+          var currentId = section.getAttribute('id');
+          navLinks.forEach(function(link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + currentId) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
