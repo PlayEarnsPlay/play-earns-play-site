@@ -45,21 +45,27 @@
     }
     .social-icons {
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end; /* Align icons along their bottom edge */
     }
     .social-icons a {
       color: #68AD9C; /* Accent color */
       margin: 0 10px;
-      font-size: 1.5em;
       text-decoration: none;
       transition: color 0.3s;
+      font-size: 1.5em; /* Uniform icon size */
+      display: flex;
+      align-items: flex-end; /* Align icons along bottom */
     }
     .social-icons a:hover {
       color: #000000; /* Change to black on hover */
     }
+    .social-icons i,
     .social-icons svg {
       width: 1em;
       height: 1em;
-      vertical-align: middle;
+      vertical-align: bottom;
     }
   </style>
 </head>
