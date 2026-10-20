@@ -1,174 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Play Earns Play</title>
-    <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Play Earns Play" />
-  <meta property="og:description" content="Play Outside. Earn Screen Time with Play Earns Play – the app that rewards activity." />
-  <meta property="og:image" content="https://playearnsplay.com/preview-image.jpg" />
-  <meta property="og:url" content="https://playearnsplay.com" />
-  <meta property="og:type" content="website" />
-  <!-- Font Awesome CDN for Social Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #FFFFFF;
-      color: #000000;
-    }
-    /* Navigation Bar Styles */
-    nav {
-      background-color: #68AD9C; /* Accent color */
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 20px;
-    }
-    nav ul li a {
-      display: block;
-      color: #FFFFFF;
-      text-decoration: none;
-      padding: 15px 0;
-      font-size: 1em;
-      transition: color 0.3s;
-    }
-    nav ul li a:hover {
-      color: #000000;
-    }
-    /* Hero Section Styles */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .hero h1 {
-      font-size: 4em;
-      margin: 0;
-    }
-    .hero h2 {
-      font-size: 1.5em;
-      font-weight: 300;
-      margin-top: 10px;
-      color: #555555;
-    }
-    .accent-line {
-      width: 150px;
-      height: 5px;
-      background-color: #68AD9C;
-      margin: 20px auto 30px;
-      border-radius: 2.5px;
-    }
-    .social-icons {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-    }
-    .social-icons a {
-      color: #68AD9C;
-      margin: 0 10px;
-      text-decoration: none;
-      transition: color 0.3s;
-      font-size: 1.5em;
-      display: flex;
-      align-items: flex-end;
-    }
-    .social-icons a:hover {
-      color: #000000;
-    }
-    .social-icons i,
-    .social-icons svg {
-      width: 1em;
-      height: 1em;
-      vertical-align: bottom;
-    }
-    /* About Us Section Styles */
-    #about {
-      padding: 80px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    #about h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #68AD9C;
-    }
-    #about p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      color: #555555;
-    }
-    /* Smooth Scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-    /* Adjust body top padding to account for fixed nav */
-    body {
-      padding-top: 60px;
-    }
-  </style>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PEP: Walk more. Play more.</title>
+<meta name="description" content="Kids earn screen time by walking. Parents set the goal; the kid's iPhone counts the steps and Screen Time does the rest.">
+<meta property="og:title" content="PEP: Walk more. Play more.">
+<meta property="og:description" content="Kids earn screen time by walking. Parents set the goal; the kid's iPhone counts the steps and Screen Time does the rest.">
+<meta property="og:image" content="https://playearnsplay.com/Images/pep@2x.png">
+<meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C0E13" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/pep.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
-<body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <!-- Add more navigation items as needed -->
-    </ul>
-  </nav>
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Play Earns Play</h1>
-    <h2>Play Outside. Earn Screen Time.</h2>
-    <div class="accent-line"></div>
-    <div class="social-icons">
-      <a href="https://facebook.com/PlayEarnsPlay" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://x.com/PlayEarnsPlay" aria-label="X">
-        <!-- X Icon SVG -->
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <!-- Replace this path with the official X logo path data -->
-          <path d="M22.54 0H1.46C0.65 0 0 0.65 0 1.46v21.08C0 23.35 0.65 24 1.46 24h21.08c0.81 0 1.46-0.65 1.46-1.46V1.46C24 0.65 23.35 0 22.54 0zM17 6l-5 6 5 6h-2.5L12 13.5 9.5 18H7l5-6-5-6h2.5L12 10.5 14.5 6H17z"/>
-        </svg>
-      </a>
-      <a href="https://instagram.com/PlayEarnsPlay" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://linkedin.com/company/PlayEarnsPlay" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
+<body class="site">
+<header class="wrap hdr">
+  <a class="brand" href="/" aria-label="PEP home"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><circle cx="6" cy="31" r="3.5" fill="var(--pep-mark-steps)"/><circle cx="15.5" cy="27.5" r="4.5" fill="var(--pep-mark-steps)"/><path d="M26 11 L26 33 L43 22 Z" fill="var(--pep-brand)" stroke="var(--pep-brand)" stroke-width="6" stroke-linejoin="round"/></svg><svg class="wm-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="49.9 -532 1747.1 724"><path fill="currentColor" d="M78 190Q67.2 190 59.6 182.4Q51.9 174.8 51.9 163.9L51.9 -493.9Q51.9 -504.8 59.6 -512.4Q67.2 -520 78 -520L219.3 -520Q230.1 -520 237.8 -512.4Q245.4 -504.8 245.4 -493.9L245.4 -460.8Q268.8 -490.7 306 -510.3Q343.2 -530 397.1 -530Q443.9 -530 481.5 -516Q519.1 -502 546.9 -473.3Q574.8 -444.6 590.8 -400.9Q606.9 -357.3 609.5 -297.9Q610.5 -277.2 610.5 -260Q610.5 -242.8 609.5 -221.3Q607.7 -165.1 591.6 -121.9Q575.6 -78.7 547.7 -49.6Q519.9 -20.4 481.9 -5.2Q443.9 10 397.1 10Q351.4 10 316.2 -5.7Q280.9 -21.4 257.6 -53.6L257.6 163.9Q257.6 174.8 249.9 182.4Q242.3 190 231.5 190ZM328.6 -146.3Q355.1 -146.3 369.6 -156.9Q384.1 -167.4 390.5 -185.9Q397 -204.3 399 -227.9Q401.6 -260 399 -292.1Q397 -315.7 390.5 -334.1Q384.1 -352.6 369.6 -363.1Q355.1 -373.7 328.6 -373.7Q303.2 -373.7 287.8 -362.9Q272.2 -352.2 265.5 -334Q258.8 -315.9 257.6 -293.6Q256.6 -272.9 256.6 -256.6Q256.6 -240.3 257.6 -218.8Q258.6 -198.3 266.3 -182.1Q274.1 -165.8 289.2 -156.1Q304.4 -146.3 328.6 -146.3ZM917.5 10Q792.9 10 719.2 -54.3Q645.6 -118.6 644.1 -251.7Q643.9 -256.1 643.9 -262.4Q643.9 -268.8 644.1 -272.4Q646.6 -355 680.5 -412.7Q714.4 -470.4 774.9 -500.2Q835.4 -530 916.7 -530Q1009.4 -530 1069.8 -493.7Q1130.2 -457.4 1159.9 -396.6Q1189.7 -335.8 1189.7 -260.6L1189.7 -233.4Q1189.7 -222.6 1182 -215Q1174.2 -207.4 1163.4 -207.4L854.6 -207.4Q854.6 -206.6 854.6 -205Q854.6 -203.4 854.6 -201.4Q854.9 -176.8 861.3 -158.2Q867.8 -139.6 881.6 -129.2Q895.5 -118.7 915.9 -118.7Q928.8 -118.7 937.8 -122.8Q946.8 -126.8 953.7 -133.4Q960.5 -139.9 965.5 -145.5Q974.5 -155.2 980.3 -157.8Q986.1 -160.2 997.9 -160.2L1154.5 -160.2Q1164.3 -160.2 1170.8 -154.3Q1177.3 -148.4 1176.3 -138.6Q1175.3 -120.6 1159.2 -95.2Q1143.1 -69.8 1111.3 -45.8Q1079.5 -21.7 1030.9 -5.8Q982.4 10 917.5 10ZM854.6 -319.4L979.2 -319.4L979.2 -321Q979.2 -348.2 972 -367.1Q964.8 -386 950.7 -395.7Q936.6 -405.4 916.7 -405.4Q896.8 -405.4 882.8 -395.7Q868.8 -386 861.7 -367.1Q854.6 -348.2 854.6 -321ZM1262.6 190Q1251.8 190 1244.1 182.4Q1236.5 174.8 1236.5 163.9L1236.5 -493.9Q1236.5 -504.8 1244.1 -512.4Q1251.8 -520 1262.6 -520L1403.9 -520Q1414.7 -520 1422.3 -512.4Q1429.9 -504.8 1429.9 -493.9L1429.9 -460.8Q1453.3 -490.7 1490.6 -510.3Q1527.8 -530 1581.7 -530Q1628.5 -530 1666.1 -516Q1703.6 -502 1731.5 -473.3Q1759.3 -444.6 1775.4 -400.9Q1791.4 -357.3 1794.1 -297.9Q1795.1 -277.2 1795.1 -260Q1795.1 -242.8 1794.1 -221.3Q1792.2 -165.1 1776.2 -121.9Q1760.1 -78.7 1732.3 -49.6Q1704.4 -20.4 1666.5 -5.2Q1628.5 10 1581.7 10Q1535.9 10 1500.7 -5.7Q1465.5 -21.4 1442.1 -53.6L1442.1 163.9Q1442.1 174.8 1434.5 182.4Q1426.9 190 1416.1 190ZM1513.1 -146.3Q1539.6 -146.3 1554.1 -156.9Q1568.6 -167.4 1575.1 -185.9Q1581.6 -204.3 1583.6 -227.9Q1586.2 -260 1583.6 -292.1Q1581.6 -315.7 1575.1 -334.1Q1568.6 -352.6 1554.1 -363.1Q1539.6 -373.7 1513.1 -373.7Q1487.8 -373.7 1472.3 -362.9Q1456.8 -352.2 1450.1 -334Q1443.3 -315.9 1442.1 -293.6Q1441.1 -272.9 1441.1 -256.6Q1441.1 -240.3 1442.1 -218.8Q1443.1 -198.3 1450.9 -182.1Q1458.6 -165.8 1473.8 -156.1Q1489 -146.3 1513.1 -146.3Z"/></svg></a>
+  <nav class="nav" aria-label="Main"><a href="/#how">How it works</a><a href="/privacy">Privacy</a><a href="/support">Help</a></nav>
+  <a class="btn" href="/#apps">Get the apps</a>
+</header>
+<main id="main">
+<section class="wrap hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Screen time, earned</p>
+    <h1 class="d1">Walk more. Play more.</h1>
+    <p class="lede">Kids earn screen time by walking. You set a daily step goal and the most time it can earn; their iPhone counts the steps and Screen Time keeps the rest honest.</p>
+    <div class="badges">
+      <div class="get"><span class="get-label">For parents: PEP</span><span class="badge" aria-label="PEP, coming soon to the App Store"><span class="badge-glyph" aria-hidden="true"></span><span class="badge-txt"><small>Coming soon to the</small><b>App Store</b></span></span></div>
+      <div class="get"><span class="get-label">For kids: PEP Kids</span><span class="badge" aria-label="PEP Kids, coming soon to the App Store"><span class="badge-glyph" aria-hidden="true"></span><span class="badge-txt"><small>Coming soon to the</small><b>App Store</b></span></span></div>
     </div>
-  </section>
-  <!-- About Us Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Play Earns Play is an innovative app that encourages kids to engage in outdoor activities by rewarding them with screen time. Our mission is to promote a healthy balance between physical activity and digital entertainment. By making outdoor play fun and rewarding, we help children develop healthy habits that last a lifetime.
-    </p>
-  </section>
-</body>
-</html>
+  </div>
+  <figure class="hero-art">
+    <svg class="pip" viewBox="0 0 110 100" aria-hidden="true"><circle cx="12" cy="82" r="3.5" fill="var(--pep-steps)"/><circle cx="22" cy="78" r="4.5" fill="var(--pep-steps)"/><g stroke="var(--pep-pip-legs)" stroke-width="5" stroke-linecap="round"><line x1="44" y1="70" x2="38" y2="86"/><line x1="58" y1="63" x2="64" y2="82"/></g><path d="M36 24 L36 66 L76 45 Z" fill="var(--pep-pip)" stroke="var(--pep-pip)" stroke-width="14" stroke-linejoin="round"/><circle cx="51" cy="40" r="6.5" fill="var(--pep-pip-eye)"/><circle cx="53" cy="40" r="3.3" fill="var(--pep-pip-pupil)"/></svg>
+    <figcaption class="hero-card kid" aria-label="Example: Ava has walked 5,240 of 8,000 steps and earned 39 of 60 minutes today.">
+      <div class="stat">
+        <span class="stat-top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx='6' cy='16' r='2.5'/><circle cx='13' cy='13' r='3'/><path d='M17.5 5.5v9l5-4.5z'/></svg> Steps · goal 8,000</span>
+        <span class="stat-val">5,240</span>
+        <span class="bar" aria-hidden="true"><i style="width: 65%"></i></span>
+      </div>
+      <div class="stat">
+        <span class="stat-top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx='12' cy='13' r='8'/><path d='M12 9v4l2.5 2.5M9.5 2.5h5'/></svg> Earned · up to 60</span>
+        <span class="stat-val">39 <span>min</span></span>
+        <span class="bar earned" aria-hidden="true"><i style="width: 65%"></i></span>
+      </div>
+    </figcaption>
+  </figure>
+</section>
+<section class="wrap section" id="how" aria-labelledby="how-title">
+  <div class="section-head">
+    <p class="eyebrow">How it works</p>
+    <h2 class="d2" id="how-title">Two steps, then play.</h2>
+    <p class="lede">Set it up together once. After that, walking does the work.</p>
+  </div>
+  <ol class="how">
+    <li><span class="how-n">1</span><h3 class="t2">Set the goal</h3><p>Pick a daily step goal and the most screen time it can earn. Each kid gets their own.</p></li>
+    <li><span class="how-n">2</span><h3 class="t2">Pair their iPhone</h3><p>PEP Kids scans a code from your phone. No email or password for your kid.</p></li>
+    <li><span class="how-n">3</span><h3 class="t2">Walk to earn</h3><p>Minutes build up with every step. Halfway to the goal is half the time.</p></li>
+    <li><span class="how-n">4</span><h3 class="t2">Play, then go outside</h3><p>The apps you choose lock when earned time runs out, until more walking earns more.</p></li>
+  </ol>
+  <p class="formula">
+    <span>By default</span>
+    <span class="chip chip-steps"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx='6' cy='16' r='2.5'/><circle cx='13' cy='13' r='3'/><path d='M17.5 5.5v9l5-4.5z'/></svg> 8,000 steps</span>
+    <span aria-hidden="true">→</span>
+    <span class="chip chip-earned"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx='12' cy='13' r='8'/><path d='M12 9v4l2.5 2.5M9.5 2.5h5'/></svg> 60 minutes</span>
+    <span><b>You choose both numbers</b>, from 1,000 to 30,000 steps and 5 minutes to 8 hours.</span>
+  </p>
+</section>
+<section class="wrap section" aria-label="For parents and kids">
+  <div class="split">
+    <article class="aud aud-parent" id="parents">
+      <div class="section-head" style="margin: 0">
+        <p class="eyebrow">For parents · PEP</p>
+        <h2 class="d2">Calm, quick, in charge.</h2>
+      </div>
+      <ul class="feat">
+        <li><span class="feat-i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4.5 5.5h15v10h-8l-4.5 4v-4h-2.5z'/><path d='M12 8.5v4M10 10.5h4'/></svg></span><div><b>Answer requests in a tap</b><span>Your kid asks for 15 or 30 more minutes. Approve or decline from the notification.</span></div></li>
+        <li><span class="feat-i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3.5 13.5l4-1 5 2.5h4a1.5 1.5 0 0 1 0 3h-5'/><path d='M3.5 19.5h11l6-4'/><rect x='12' y='3' width='7' height='9' rx='1.5'/></svg></span><div><b>Hand over your phone</b><span>Lend your iPhone with a timer and only the apps you pick. Time past what they've earned becomes steps owed.</span></div></li>
+        <li><span class="feat-i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4 7h10M18 7h2M4 17h4M12 17h8'/><circle cx='16' cy='7' r='2'/><circle cx='10' cy='17' r='2'/></svg></span><div><b>Rules for each kid</b><span>Goals, limits and steps owed, with a second parent if you share the job.</span></div></li>
+      </ul>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-row">
+          <span class="ava" style="background: var(--pep-lime)">A</span>
+          <span class="mock-t"><b>Ava asked for 15 minutes</b><span>2 min ago · 21 minutes left today</span></span>
+        </div>
+        <div class="mock-acts"><span class="mock-btn">Approve</span><span class="mock-btn quiet">Decline</span></div>
+      </div>
+    </article>
+    <article class="aud aud-kids" id="kids">
+      <div class="section-head" style="margin: 0">
+        <p class="eyebrow">For kids · PEP Kids</p>
+        <h2 class="d2">Every step counts.</h2>
+      </div>
+      <ul class="feat">
+        <li><span class="feat-i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx='6' cy='16' r='2.5'/><circle cx='13' cy='13' r='3'/><path d='M17.5 5.5v9l5-4.5z'/></svg></span><div><b>Watch time grow</b><span>See steps turn into minutes as you go.</span></div></li>
+        <li><span class="feat-i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4.5 5.5h15v10h-8l-4.5 4v-4h-2.5z'/><path d='M12 8.5v4M10 10.5h4'/></svg></span><div><b>Ask for more</b><span>Send a grown-up a request when you need a few more minutes.</span></div></li>
+        <li><span class="feat-i"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 12.5l4.5 4.5L19 7.5'/></svg></span><div><b>Walk it back</b><span>Played extra on a grown-up's phone? Those minutes become steps you owe, and walking pays them off.</span></div></li>
+      </ul>
+      <div class="kidcard" aria-hidden="true">
+        <svg class="pip-s" viewBox="0 0 110 100" aria-hidden="true"><circle cx="12" cy="82" r="3.5" fill="var(--pep-steps)"/><circle cx="22" cy="78" r="4.5" fill="var(--pep-steps)"/><g stroke="var(--pep-pip-legs)" stroke-width="5" stroke-linecap="round"><line x1="44" y1="70" x2="38" y2="86"/><line x1="58" y1="63" x2="64" y2="82"/></g><path d="M36 24 L36 66 L76 45 Z" fill="var(--pep-pip)" stroke="var(--pep-pip)" stroke-width="14" stroke-linejoin="round"/><circle cx="51" cy="40" r="6.5" fill="var(--pep-pip-eye)"/><circle cx="53" cy="40" r="3.3" fill="var(--pep-pip-pupil)"/></svg>
+        <div><b>39 minutes earned!</b><span>2,760 more steps for the rest of today.</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="wrap section" id="privacy" aria-labelledby="privacy-title">
+  <div class="band">
+    <div class="section-head" style="margin: 0">
+      <p class="eyebrow">Privacy</p>
+      <h2 class="d2" id="privacy-title">Made for kids, so it keeps almost nothing.</h2>
+      <p class="lede">PEP needs a first name, a step count and minutes used. That's it.</p>
+    </div>
+    <ul class="pgrid">
+      <li><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx='12' cy='8' r='4'/><path d='M4.5 20.5a7.5 7.5 0 0 1 15 0'/></svg></span><h3 class="t2">First name only</h3><p>A kid's profile is the first name you type. No photo, birthday, email or password.</p></li>
+      <li><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3 12s3.5-6.5 9-6.5S21 12 21 12s-3.5 6.5-9 6.5S3 12 3 12z'/><circle cx='12' cy='12' r='2.5'/><path d='M4 4l16 16'/></svg></span><h3 class="t2">No ads, no tracking</h3><p>No analytics, no ad networks, and nothing sold or shared.</p></li>
+      <li><span class="pi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x='5' y='10.5' width='14' height='10' rx='2'/><path d='M8 10.5V7.5a4 4 0 0 1 8 0v3'/></svg></span><h3 class="t2">Apps stay private</h3><p>Screen Time keeps app choices on the iPhone as private tokens. We never learn which apps your kid uses.</p></li>
+    </ul>
+    <p class="band-foot"><a href="/privacy">Read the privacy policy</a><a href="/support#your-account-and-data">Delete your family's data</a></p>
+  </div>
+</section>
+<section class="wrap section" id="apps" aria-labelledby="apps-title">
+  <div class="section-head">
+    <p class="eyebrow">Get the apps</p>
+    <h2 class="d2" id="apps-title">One for you, one for them.</h2>
+    <p class="lede">Both run on iPhone and iPad with iOS 27 or later.</p>
+  </div>
+  <div class="apps">
+    <article class="appcard">
+      <img class="appicon" src="/Images/pep.png" srcset="/Images/pep@2x.png 2x" width="96" height="96" alt="">
+      <div class="appcard-body">
+        <h3 class="t1">PEP</h3>
+        <p class="body-2">For parents. Set goals, answer requests, and hand over your phone with a timer.</p>
+        <span class="badge" aria-label="PEP, coming soon to the App Store"><span class="badge-glyph" aria-hidden="true"></span><span class="badge-txt"><small>Coming soon to the</small><b>App Store</b></span></span>
+      </div>
+    </article>
+    <article class="appcard">
+      <img class="appicon" src="/Images/pepkids.png" srcset="/Images/pepkids@2x.png 2x" width="96" height="96" alt="">
+      <div class="appcard-body">
+        <h3 class="t1">PEP Kids</h3>
+        <p class="body-2">For kids, on their own iPhone. Counts steps, shows earned time and asks for more.</p>
+        <span class="badge" aria-label="PEP Kids, coming soon to the App Store"><span class="badge-glyph" aria-hidden="true"></span><span class="badge-txt"><small>Coming soon to the</small><b>App Store</b></span></span>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="wrap section" id="faq" aria-labelledby="faq-title">
+  <div class="section-head">
+    <p class="eyebrow">FAQ</p>
+    <h2 class="d2" id="faq-title">Questions parents ask.</h2>
+  </div>
+  <div class="faq">
+<details><summary>Does my kid need their own iPhone?<span class="plus"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 6v12M6 12h12'/></svg></span></summary><div class="ans"><p>PEP Kids runs on your kid's iPhone, where it counts steps and limits apps through Screen Time. No phone of their own? Hand over yours from PEP, with a timer and only the apps you choose.</p></div></details>
+<details><summary>What happens when time runs out?<span class="plus"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 6v12M6 12h12'/></svg></span></summary><div class="ans"><p>The apps you chose show a screen saying time's up. Your kid can ask for 15 or 30 more minutes, and you approve or decline from your phone.</p><p>Approved minutes are added to today's time straight away.</p></div></details>
+<details><summary>Can my kid get around it?<span class="plus"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 6v12M6 12h12'/></svg></span></summary><div class="ans"><p>Limits are enforced by Apple's Screen Time, and changing PEP's settings on your kid's phone needs your grown-up PIN.</p></div></details>
+<details><summary>Does it work on iPad?<span class="plus"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 6v12M6 12h12'/></svg></span></summary><div class="ans"><p>Yes, both apps run on iPad. An iPad can't count steps itself, so PEP Kids on iPad only knows the steps Health has from another device.</p></div></details>
+<details><summary>Can two parents share a family?<span class="plus"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 6v12M6 12h12'/></svg></span></summary><div class="ans"><p>Yes. In PEP, open Settings and invite another parent. They get a link to join, and you both see every kid and answer requests.</p></div></details>
+<details><summary>How do I delete our data?<span class="plus"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 6v12M6 12h12'/></svg></span></summary><div class="ans"><p>In PEP, open Settings and tap Delete Account. If you're the only parent, that deletes the whole family, including every kid's record. <a href="/support#your-account-and-data">More about your data</a>.</p></div></details>
+  </div>
+</section>
+</main>
+<footer class="wrap ftr">
+  <div class="lockup">
+    <span class="brand"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><circle cx="6" cy="31" r="3.5" fill="var(--pep-mark-steps)"/><circle cx="15.5" cy="27.5" r="4.5" fill="var(--pep-mark-steps)"/><path d="M26 11 L26 33 L43 22 Z" fill="var(--pep-brand)" stroke="var(--pep-brand)" stroke-width="6" stroke-linejoin="round"/></svg><svg class="wm-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="49.9 -532 1747.1 724"><path fill="currentColor" d="M78 190Q67.2 190 59.6 182.4Q51.9 174.8 51.9 163.9L51.9 -493.9Q51.9 -504.8 59.6 -512.4Q67.2 -520 78 -520L219.3 -520Q230.1 -520 237.8 -512.4Q245.4 -504.8 245.4 -493.9L245.4 -460.8Q268.8 -490.7 306 -510.3Q343.2 -530 397.1 -530Q443.9 -530 481.5 -516Q519.1 -502 546.9 -473.3Q574.8 -444.6 590.8 -400.9Q606.9 -357.3 609.5 -297.9Q610.5 -277.2 610.5 -260Q610.5 -242.8 609.5 -221.3Q607.7 -165.1 591.6 -121.9Q575.6 -78.7 547.7 -49.6Q519.9 -20.4 481.9 -5.2Q443.9 10 397.1 10Q351.4 10 316.2 -5.7Q280.9 -21.4 257.6 -53.6L257.6 163.9Q257.6 174.8 249.9 182.4Q242.3 190 231.5 190ZM328.6 -146.3Q355.1 -146.3 369.6 -156.9Q384.1 -167.4 390.5 -185.9Q397 -204.3 399 -227.9Q401.6 -260 399 -292.1Q397 -315.7 390.5 -334.1Q384.1 -352.6 369.6 -363.1Q355.1 -373.7 328.6 -373.7Q303.2 -373.7 287.8 -362.9Q272.2 -352.2 265.5 -334Q258.8 -315.9 257.6 -293.6Q256.6 -272.9 256.6 -256.6Q256.6 -240.3 257.6 -218.8Q258.6 -198.3 266.3 -182.1Q274.1 -165.8 289.2 -156.1Q304.4 -146.3 328.6 -146.3ZM917.5 10Q792.9 10 719.2 -54.3Q645.6 -118.6 644.1 -251.7Q643.9 -256.1 643.9 -262.4Q643.9 -268.8 644.1 -272.4Q646.6 -355 680.5 -412.7Q714.4 -470.4 774.9 -500.2Q835.4 -530 916.7 -530Q1009.4 -530 1069.8 -493.7Q1130.2 -457.4 1159.9 -396.6Q1189.7 -335.8 1189.7 -260.6L1189.7 -233.4Q1189.7 -222.6 1182 -215Q1174.2 -207.4 1163.4 -207.4L854.6 -207.4Q854.6 -206.6 854.6 -205Q854.6 -203.4 854.6 -201.4Q854.9 -176.8 861.3 -158.2Q867.8 -139.6 881.6 -129.2Q895.5 -118.7 915.9 -118.7Q928.8 -118.7 937.8 -122.8Q946.8 -126.8 953.7 -133.4Q960.5 -139.9 965.5 -145.5Q974.5 -155.2 980.3 -157.8Q986.1 -160.2 997.9 -160.2L1154.5 -160.2Q1164.3 -160.2 1170.8 -154.3Q1177.3 -148.4 1176.3 -138.6Q1175.3 -120.6 1159.2 -95.2Q1143.1 -69.8 1111.3 -45.8Q1079.5 -21.7 1030.9 -5.8Q982.4 10 917.5 10ZM854.6 -319.4L979.2 -319.4L979.2 -321Q979.2 -348.2 972 -367.1Q964.8 -386 950.7 -395.7Q936.6 -405.4 916.7 -405.4Q896.8 -405.4 882.8 -395.7Q868.8 -386 861.7 -367.1Q854.6 -348.2 854.6 -321ZM1262.6 190Q1251.8 190 1244.1 182.4Q1236.5 174.8 1236.5 163.9L1236.5 -493.9Q1236.5 -504.8 1244.1 -512.4Q1251.8 -520 1262.6 -520L1403.9 -520Q1414.7 -520 1422.3 -512.4Q1429.9 -504.8 1429.9 -493.9L1429.9 -460.8Q1453.3 -490.7 1490.6 -510.3Q1527.8 -530 1581.7 -530Q1628.5 -530 1666.1 -516Q1703.6 -502 1731.5 -473.3Q1759.3 -444.6 1775.4 -400.9Q1791.4 -357.3 1794.1 -297.9Q1795.1 -277.2 1795.1 -260Q1795.1 -242.8 1794.1 -221.3Q1792.2 -165.1 1776.2 -121.9Q1760.1 -78.7 1732.3 -49.6Q1704.4 -20.4 1666.5 -5.2Q1628.5 10 1581.7 10Q1535.9 10 1500.7 -5.7Q1465.5 -21.4 1442.1 -53.6L1442.1 163.9Q1442.1 174.8 1434.5 182.4Q1426.9 190 1416.1 190ZM1513.1 -146.3Q1539.6 -146.3 1554.1 -156.9Q1568.6 -167.4 1575.1 -185.9Q1581.6 -204.3 1583.6 -227.9Q1586.2 -260 1583.6 -292.1Q1581.6 -315.7 1575.1 -334.1Q1568.6 -352.6 1554.1 -363.1Q1539.6 -373.7 1513.1 -373.7Q1487.8 -373.7 1472.3 -362.9Q1456.8 -352.2 1450.1 -334Q1443.3 -315.9 1442.1 -293.6Q1441.1 -272.9 1441.1 -256.6Q1441.1 -240.3 1442.1 -218.8Q1443.1 -198.3 1450.9 -182.1Q1458.6 -165.8 1473.8 -156.1Q1489 -146.3 1513.1 -146.3Z"/></svg></span>
+    <small>Play Earns Play</small>
+    <p class="caption">© 2026 Play Earns Play</p>
+  </div>
+  <div>
+    <h3>Product</h3>
+    <ul>
+      <li><a href="/#how">How it works</a></li>
+      <li><a href="/#parents">For parents</a></li>
+      <li><a href="/#kids">For kids</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Help</h3>
+    <ul>
+      <li><a href="/support">Support</a></li>
+      <li><a href="/support#pairing-a-kids-iphone">Pairing</a></li>
+      <li><a href="mailto:support@playearnsplay.com">Contact us</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Legal</h3>
+    <ul>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+    </ul>
+  </div>
+</footer>
+</body></html>

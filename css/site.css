@@ -1,0 +1,25 @@
+/* Additions to pep.css for the built site. Keep pep.css as the designer
+   returned it (batch 6), so a new export can replace it wholesale. */
+
+/* The mark's footsteps: cobalt on paper, lime in dark (Brand-Mark board). */
+.site { --pep-mark-steps: var(--pep-brand); }
+.site[data-theme="dark"] { --pep-mark-steps: var(--pep-lime); }
+@media (prefers-color-scheme: dark) {
+  .site:not([data-theme="light"]) { --pep-mark-steps: var(--pep-lime); }
+}
+
+html, body.site { margin: 0; min-height: 100%; }
+.site [hidden] { display: none !important; }
+.site .mark { flex: none; }
+.hero-art { margin: 0; }
+.stat-top svg, .chip svg { flex: none; }
+.band-foot { gap: 12px 32px; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 16px; }
+.prose th, .prose td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--pep-separator); vertical-align: top; color: var(--pep-text-2); }
+.prose th { color: var(--pep-text); }
+.contact .btn svg { flex: none; }
+
+/* The outlined wordmark (B-03) at the size .wm sets text: 30px type, so the
+   724-unit box is 21.7px tall. The margin centres the x-height, not the
+   descenders, on the mark. */
+.wm-svg { display: block; height: 21.7px; width: auto; margin-top: 5.4px; flex: none; }

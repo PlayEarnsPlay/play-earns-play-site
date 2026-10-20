@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["77E57ANHXG.com.jeremybutler.PlayEarnsPlay", "77E57ANHXG.com.jeremybutler.PlayEarnsPlay.Development"],
+        "components": [{ "/": "/join/*", "comment": "Invites for another parent" }]
+      }
+    ]
+  }
+}
