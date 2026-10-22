@@ -1,12 +1,24 @@
 /* Additions to pep.css for the built site. Keep pep.css as the designer
    returned it (batch 6), so a new export can replace it wholesale. */
 
-/* The mark's footsteps: cobalt on paper, lime in dark (Brand-Mark board). */
+/* PEP is for kids, so the site stays light even when the visitor's device
+   is in dark mode: Theme.swift sets data-theme="light", which opts out of
+   pep.css's dark tokens. (The apps still follow the system.) */
+
+/* The mark's footsteps: cobalt on paper (Brand-Mark board). */
 .site { --pep-mark-steps: var(--pep-brand); }
-.site[data-theme="dark"] { --pep-mark-steps: var(--pep-lime); }
-@media (prefers-color-scheme: dark) {
-  .site:not([data-theme="light"]) { --pep-mark-steps: var(--pep-lime); }
+
+/* The privacy band on a soft cobalt tint with white cards, in place of the
+   designer's ink band. The icon tiles stay lime. */
+.site {
+  --pep-band: #E7EBFF;
+  --pep-band-card: #FFFFFF;
+  --pep-band-line: #D3D9FA;
+  --pep-on-band: var(--pep-text);
+  --pep-on-band-2: var(--pep-text-2);
+  --pep-band-accent: var(--pep-brand);
 }
+.pgrid .pi { background: var(--pep-lime); }
 
 html, body.site { margin: 0; min-height: 100%; }
 .site [hidden] { display: none !important; }
